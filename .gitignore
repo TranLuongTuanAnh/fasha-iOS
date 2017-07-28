@@ -1,0 +1,7 @@
+# cocoa pod library
+Pods/
+
+.DS_Store
+build
+
+fasha-iOS.xcworkspace/*

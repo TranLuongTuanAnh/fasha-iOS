@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04A019981328EA701F728DBB /* Pods_fasha_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C84EB41222DBC525F968347 /* Pods_fasha_iOS.framework */; };
 		AD99DB341F2B325A008F5AE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB331F2B325A008F5AE8 /* AppDelegate.swift */; };
 		AD99DB361F2B325A008F5AE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB351F2B325A008F5AE8 /* ViewController.swift */; };
 		AD99DB391F2B325A008F5AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB371F2B325A008F5AE8 /* Main.storyboard */; };
 		AD99DB3B1F2B325A008F5AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB3A1F2B325A008F5AE8 /* Assets.xcassets */; };
 		AD99DB3E1F2B325A008F5AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB3C1F2B325A008F5AE8 /* LaunchScreen.storyboard */; };
 		AD99DB491F2B325A008F5AE8 /* fasha_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB481F2B325A008F5AE8 /* fasha_iOSTests.swift */; };
+		F10F02BE01027912B898847E /* Pods_fasha_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2049916D2A999FD5AE18D7DA /* Pods_fasha_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2049916D2A999FD5AE18D7DA /* Pods_fasha_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fasha_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		362316CC842D04D487FD3328 /* Pods-fasha-iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fasha-iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fasha-iOSTests/Pods-fasha-iOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		5C84EB41222DBC525F968347 /* Pods_fasha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fasha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67EA781A0204FC5A720F6AA4 /* Pods-fasha-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fasha-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fasha-iOSTests/Pods-fasha-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD99DB301F2B325A008F5AE8 /* fasha-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fasha-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD99DB331F2B325A008F5AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD99DB351F2B325A008F5AE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		AD99DB441F2B325A008F5AE8 /* fasha-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fasha-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD99DB481F2B325A008F5AE8 /* fasha_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fasha_iOSTests.swift; sourceTree = "<group>"; };
 		AD99DB4A1F2B325A008F5AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB0FE4A732D25BFB8D278718 /* Pods-fasha-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fasha-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fasha-iOS/Pods-fasha-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		E882148B4880BE4BD90E7961 /* Pods-fasha-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fasha-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-fasha-iOS/Pods-fasha-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04A019981328EA701F728DBB /* Pods_fasha_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +59,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F10F02BE01027912B898847E /* Pods_fasha_iOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FC4B6F991F9A8461A90F5FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C84EB41222DBC525F968347 /* Pods_fasha_iOS.framework */,
+				2049916D2A999FD5AE18D7DA /* Pods_fasha_iOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AD99DB271F2B325A008F5AE8 = {
 			isa = PBXGroup;
 			children = (
 				AD99DB321F2B325A008F5AE8 /* fasha-iOS */,
 				AD99DB471F2B325A008F5AE8 /* fasha-iOSTests */,
 				AD99DB311F2B325A008F5AE8 /* Products */,
+				DB77AA93F4D3B2D4F14165DE /* Pods */,
+				3FC4B6F991F9A8461A90F5FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +117,17 @@
 			path = "fasha-iOSTests";
 			sourceTree = "<group>";
 		};
+		DB77AA93F4D3B2D4F14165DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BB0FE4A732D25BFB8D278718 /* Pods-fasha-iOS.debug.xcconfig */,
+				E882148B4880BE4BD90E7961 /* Pods-fasha-iOS.release.xcconfig */,
+				67EA781A0204FC5A720F6AA4 /* Pods-fasha-iOSTests.debug.xcconfig */,
+				362316CC842D04D487FD3328 /* Pods-fasha-iOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD99DB4D1F2B325A008F5AE8 /* Build configuration list for PBXNativeTarget "fasha-iOS" */;
 			buildPhases = (
+				C186D9C4CCE6A19BC8ED178B /* [CP] Check Pods Manifest.lock */,
 				AD99DB2C1F2B325A008F5AE8 /* Sources */,
 				AD99DB2D1F2B325A008F5AE8 /* Frameworks */,
 				AD99DB2E1F2B325A008F5AE8 /* Resources */,
+				096325F5A9DE67BFA5800BCB /* [CP] Embed Pods Frameworks */,
+				B6EACB64B3C20BB24F512D17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD99DB501F2B325A008F5AE8 /* Build configuration list for PBXNativeTarget "fasha-iOSTests" */;
 			buildPhases = (
+				79533465325A77EC18A13D5D /* [CP] Check Pods Manifest.lock */,
 				AD99DB401F2B325A008F5AE8 /* Sources */,
 				AD99DB411F2B325A008F5AE8 /* Frameworks */,
 				AD99DB421F2B325A008F5AE8 /* Resources */,
+				B8AFF672F7741BE8E16D9D8D /* [CP] Embed Pods Frameworks */,
+				A6A9018EA2E20539D5D5C149 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		096325F5A9DE67BFA5800BCB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fasha-iOS/Pods-fasha-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79533465325A77EC18A13D5D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6A9018EA2E20539D5D5C149 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fasha-iOSTests/Pods-fasha-iOSTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6EACB64B3C20BB24F512D17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fasha-iOS/Pods-fasha-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8AFF672F7741BE8E16D9D8D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fasha-iOSTests/Pods-fasha-iOSTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C186D9C4CCE6A19BC8ED178B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD99DB2C1F2B325A008F5AE8 /* Sources */ = {
@@ -337,6 +468,7 @@
 		};
 		AD99DB4E1F2B325A008F5AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB0FE4A732D25BFB8D278718 /* Pods-fasha-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "fasha-iOS/Info.plist";
@@ -349,6 +481,7 @@
 		};
 		AD99DB4F1F2B325A008F5AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E882148B4880BE4BD90E7961 /* Pods-fasha-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "fasha-iOS/Info.plist";
@@ -361,6 +494,7 @@
 		};
 		AD99DB511F2B325A008F5AE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67EA781A0204FC5A720F6AA4 /* Pods-fasha-iOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -375,6 +509,7 @@
 		};
 		AD99DB521F2B325A008F5AE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 362316CC842D04D487FD3328 /* Pods-fasha-iOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
