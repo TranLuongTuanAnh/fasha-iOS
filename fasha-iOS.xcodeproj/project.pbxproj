@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		04A019981328EA701F728DBB /* Pods_fasha_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C84EB41222DBC525F968347 /* Pods_fasha_iOS.framework */; };
-		AD99DB341F2B325A008F5AE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB331F2B325A008F5AE8 /* AppDelegate.swift */; };
 		AD99DB361F2B325A008F5AE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB351F2B325A008F5AE8 /* ViewController.swift */; };
 		AD99DB391F2B325A008F5AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB371F2B325A008F5AE8 /* Main.storyboard */; };
 		AD99DB3B1F2B325A008F5AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB3A1F2B325A008F5AE8 /* Assets.xcassets */; };
 		AD99DB3E1F2B325A008F5AE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB3C1F2B325A008F5AE8 /* LaunchScreen.storyboard */; };
 		AD99DB491F2B325A008F5AE8 /* fasha_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB481F2B325A008F5AE8 /* fasha_iOSTests.swift */; };
+		AD99DB591F2B9AE4008F5AE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB571F2B9AE4008F5AE8 /* AppDelegate.swift */; };
+		AD99DB5A1F2B9AE4008F5AE8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB581F2B9AE4008F5AE8 /* Info.plist */; };
 		F10F02BE01027912B898847E /* Pods_fasha_iOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2049916D2A999FD5AE18D7DA /* Pods_fasha_iOSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,15 +34,15 @@
 		5C84EB41222DBC525F968347 /* Pods_fasha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fasha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67EA781A0204FC5A720F6AA4 /* Pods-fasha-iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fasha-iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fasha-iOSTests/Pods-fasha-iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AD99DB301F2B325A008F5AE8 /* fasha-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fasha-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AD99DB331F2B325A008F5AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD99DB351F2B325A008F5AE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AD99DB381F2B325A008F5AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD99DB3A1F2B325A008F5AE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD99DB3D1F2B325A008F5AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AD99DB3F1F2B325A008F5AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD99DB441F2B325A008F5AE8 /* fasha-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fasha-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD99DB481F2B325A008F5AE8 /* fasha_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fasha_iOSTests.swift; sourceTree = "<group>"; };
 		AD99DB4A1F2B325A008F5AE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD99DB571F2B9AE4008F5AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD99DB581F2B9AE4008F5AE8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB0FE4A732D25BFB8D278718 /* Pods-fasha-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fasha-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fasha-iOS/Pods-fasha-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		E882148B4880BE4BD90E7961 /* Pods-fasha-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fasha-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-fasha-iOS/Pods-fasha-iOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,12 +99,14 @@
 		AD99DB321F2B325A008F5AE8 /* fasha-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				AD99DB331F2B325A008F5AE8 /* AppDelegate.swift */,
+				AD99DB611F2B9BAE008F5AE8 /* DataSource */,
+				AD99DB561F2B9AE4008F5AE8 /* SupportingFiles */,
+				AD99DB551F2B965E008F5AE8 /* Application */,
+				AD99DB541F2B9105008F5AE8 /* Service */,
+				AD99DB531F2B90FD008F5AE8 /* Domain */,
 				AD99DB351F2B325A008F5AE8 /* ViewController.swift */,
 				AD99DB371F2B325A008F5AE8 /* Main.storyboard */,
 				AD99DB3A1F2B325A008F5AE8 /* Assets.xcassets */,
-				AD99DB3C1F2B325A008F5AE8 /* LaunchScreen.storyboard */,
-				AD99DB3F1F2B325A008F5AE8 /* Info.plist */,
 			);
 			path = "fasha-iOS";
 			sourceTree = "<group>";
@@ -115,6 +118,92 @@
 				AD99DB4A1F2B325A008F5AE8 /* Info.plist */,
 			);
 			path = "fasha-iOSTests";
+			sourceTree = "<group>";
+		};
+		AD99DB531F2B90FD008F5AE8 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AD99DB5B1F2B9B26008F5AE8 /* Model */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AD99DB541F2B9105008F5AE8 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		AD99DB551F2B965E008F5AE8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				AD99DB5F1F2B9B46008F5AE8 /* Controllers */,
+				AD99DB601F2B9B46008F5AE8 /* Views */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		AD99DB561F2B9AE4008F5AE8 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AD99DB3C1F2B325A008F5AE8 /* LaunchScreen.storyboard */,
+				AD99DB571F2B9AE4008F5AE8 /* AppDelegate.swift */,
+				AD99DB581F2B9AE4008F5AE8 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AD99DB5B1F2B9B26008F5AE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AD99DB5C1F2B9B26008F5AE8 /* DTO */,
+				AD99DB5D1F2B9B26008F5AE8 /* Entity */,
+				AD99DB5E1F2B9B26008F5AE8 /* Enum */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AD99DB5C1F2B9B26008F5AE8 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		AD99DB5D1F2B9B26008F5AE8 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AD99DB5E1F2B9B26008F5AE8 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		AD99DB5F1F2B9B46008F5AE8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AD99DB601F2B9B46008F5AE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD99DB611F2B9BAE008F5AE8 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		DB77AA93F4D3B2D4F14165DE /* Pods */ = {
@@ -217,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD99DB5A1F2B9AE4008F5AE8 /* Info.plist in Resources */,
 				AD99DB3E1F2B325A008F5AE8 /* LaunchScreen.storyboard in Resources */,
 				AD99DB3B1F2B325A008F5AE8 /* Assets.xcassets in Resources */,
 				AD99DB391F2B325A008F5AE8 /* Main.storyboard in Resources */,
@@ -330,8 +420,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD99DB591F2B9AE4008F5AE8 /* AppDelegate.swift in Sources */,
 				AD99DB361F2B325A008F5AE8 /* ViewController.swift in Sources */,
-				AD99DB341F2B325A008F5AE8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +458,7 @@
 				AD99DB3D1F2B325A008F5AE8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -541,6 +632,7 @@
 				AD99DB4F1F2B325A008F5AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AD99DB501F2B325A008F5AE8 /* Build configuration list for PBXNativeTarget "fasha-iOSTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +641,7 @@
 				AD99DB521F2B325A008F5AE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
