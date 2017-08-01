@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let apiclient = ApiClientBase()
+        apiclient.get(path: "FashaApi/index", parameters: nil, headers: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
