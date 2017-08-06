@@ -8,12 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StartController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         let apiclient = ApiClientBase()
-        apiclient.get(path: "FashaApi/index", parameters: nil, headers: nil)
+        apiclient.get(path: "FashaApi/index", queryParams: nil, headers: nil)
         // Do any additional setup after loading the view, typically from a nib.
     }
 
