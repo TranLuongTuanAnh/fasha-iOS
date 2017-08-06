@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import Bond
+import ReactiveKit
 
 enum State {
     case loading
@@ -15,7 +17,7 @@ enum State {
 }
 
 class LoginState {
-//    var loginState = Observable("Jim")
+    var loginState = Observable("Jim")
     init() {
         
     }

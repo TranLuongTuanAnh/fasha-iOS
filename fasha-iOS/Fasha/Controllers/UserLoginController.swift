@@ -7,7 +7,13 @@
 //
 
 import Foundation
+import UIKit
 
-class LoginController: UIViewController {
-    
+class UserLoginController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    @IBAction func tapLogin(_ sender: Any) {
+    }
+
 }

@@ -1,5 +1,10 @@
 PODS:
   - Alamofire (4.5.0)
+  - Bond (6.0.1):
+    - Diff (~> 0.4)
+    - ReactiveKit (~> 3.3)
+  - Diff (0.5.0)
+  - ReactiveKit (3.3.1)
   - Realm (2.9.0):
     - Realm/Headers (= 2.9.0)
   - Realm/Headers (2.9.0)
@@ -8,13 +13,19 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - Bond (= 6.0.1)
+  - Diff (= 0.5.0)
+  - ReactiveKit (= 3.3.1)
   - RealmSwift
 
 SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Bond: 22deecec4f4e9dcbd68a8b494642dc3046701183
+  Diff: eceb93a3adf508574ba9b8560da185ace83de055
+  ReactiveKit: 27df79c2e2f0771aef1061551fcd7e82b92066e9
   Realm: f14ab1673502559cb16592ddb8f383c474c13e05
   RealmSwift: 16ad2c187042c4934f49750375582fe508627dcb
 
-PODFILE CHECKSUM: 1fb6e0992e80e430ccfa176a833ceaa383909acf
+PODFILE CHECKSUM: c8089c16b265c94ee516c8e08062fed6eb06cb13
 
 COCOAPODS: 1.2.1

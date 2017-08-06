@@ -16,14 +16,31 @@ class ApiClientBase {
     ]
     init() {
     }
-    func get(path:String , parameters:[String:AnyObject]?, headers:[String:String]?) {
+    func get(path:String , queryParams:[String:AnyObject]?, headers:[String:String]?) {
+        let urlAndHeaders = createUrlRequest(path: path, headers: headers)
+        Alamofire.request(urlAndHeaders.url, method: .get, parameters: queryParams, encoding: URLEncoding.default, headers: urlAndHeaders.header).responseJSON(completionHandler: {response in
+            debugPrint(response)
+        })
+    }
+    func post(path:String, parameters:[String:AnyObject], headers:[String:String]?) {
+        let urlAndHeaders = createUrlRequest(path: path, headers: headers)
+        Alamofire.request(urlAndHeaders.url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: urlAndHeaders.header).responseJSON { response in
+            debugPrint(response)
+        }
+    }
+    func delete(path:String, queryParams:[String:AnyObject], headers:[String:String]) {
+        let urlAndHeaders = createUrlRequest(path: path, headers: headers)
+        Alamofire.request(urlAndHeaders.url, method: .delete, parameters: queryParams, encoding: URLEncoding.default, headers: urlAndHeaders.header).responseJSON { (response) in
+            debugPrint(response)
+        }
+    }
+    private func createUrlRequest(path:String, headers:[String:String]?) -> (url:URL, header:HTTPHeaders) {
         let url = baseUrl.appendingPathComponent(path)
+        
         var requestHeader = self.headers
         if let headers = headers {
             requestHeader.merge(dictionaries: headers)
         }
-        Alamofire.request(url, method: .get, parameters: parameters, headers: requestHeader).responseJSON(completionHandler: {response in
-            debugPrint(response)
-        })
+        return (url,requestHeader)
     }
 }
