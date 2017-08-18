@@ -7,3 +7,16 @@
 //
 
 import Foundation
+import PromiseKit
+
+class UserService:NSObject {
+    func login(email:String, password:String) {
+        _ = firstly { _ -> Promise<Any?>  in
+            LoginState.shareInstance.transitionState.next(.loading)
+            let domain = UserDomainFactory.domain
+            return (domain?.userRepository.login(email: email, password: password))!
+         }.then {  obj -> () in
+            debugPrint(obj as AnyObject)
+        }
+    }
+}

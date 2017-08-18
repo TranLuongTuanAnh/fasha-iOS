@@ -9,6 +9,7 @@ target 'fasha-iOS' do
   pod 'Bond', '6.0.1'
   pod 'ReactiveKit', '3.3.1'
   pod 'Diff',  '0.5.0'
+  pod 'PromiseKit', '~> 4.0'
 
 #  # Pods for fasha-iOS
 #

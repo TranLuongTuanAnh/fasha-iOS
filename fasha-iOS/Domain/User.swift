@@ -7,3 +7,19 @@
 //
 
 import Foundation
+class UserDomain {
+     public var userRepository: UserRepository! {
+        let locator = ServiceLocatorImpl.sharedInstance
+        let repository: UserRepository = locator.lookup()
+        return ImplicitlyUnwrappedOptional(repository)
+    }
+}
+
+class UserDomainFactory {
+    public static var domain:UserDomain! = UserDomain()
+    
+    func destroy() {
+        UserDomainFactory.domain = nil
+    }
+    
+}
