@@ -10,20 +10,13 @@ import Foundation
 import Bond
 import ReactiveKit
 
-enum State {
+enum LoginStateType {
     case loading
     case success
     case failure
 }
 
 class LoginState {
-    var loginState = Observable("Jim")
-    init() {
-        
-    }
-    
-}
-
-class LoginStateFactory {
-    
+    static let shareInstance = LoginState()
+    var transitionState = Observable<LoginStateType>(.success)
 }

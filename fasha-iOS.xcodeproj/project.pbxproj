@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		04A019981328EA701F728DBB /* Pods_fasha_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C84EB41222DBC525F968347 /* Pods_fasha_iOS.framework */; };
+		AD304EF31F39A89D00C1B638 /* ServiceLocatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD304EF21F39A89D00C1B638 /* ServiceLocatorImpl.swift */; };
 		AD99DB361F2B325A008F5AE8 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB351F2B325A008F5AE8 /* StartController.swift */; };
 		AD99DB391F2B325A008F5AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB371F2B325A008F5AE8 /* Main.storyboard */; };
 		AD99DB3B1F2B325A008F5AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB3A1F2B325A008F5AE8 /* Assets.xcassets */; };
@@ -16,8 +17,12 @@
 		AD99DB6A1F2CF212008F5AE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB681F2CF212008F5AE8 /* AppDelegate.swift */; };
 		AD99DB6B1F2CF212008F5AE8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB691F2CF212008F5AE8 /* Info.plist */; };
 		AD99DB7A1F3048D9008F5AE8 /* ApiClientBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB791F3048D9008F5AE8 /* ApiClientBase.swift */; };
+		ADA12BA61F475BF8005D8E1B /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA12BA51F475BF8005D8E1B /* ServiceLocator.swift */; };
 		ADBE38871F377524002B2B5E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBE38861F377524002B2B5E /* User.swift */; };
 		ADDAE2651F37913B0076E530 /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDAE2641F37913B0076E530 /* LoginState.swift */; };
+		ADDAE2681F382BD70076E530 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDAE2671F382BD70076E530 /* UserService.swift */; };
+		ADDAE26A1F3869990076E530 /* UserRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDAE2691F3869990076E530 /* UserRepositoryImpl.swift */; };
+		ADDAE26D1F386AC50076E530 /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDAE26C1F386AC50076E530 /* UserRepository.swift */; };
 		ADF8C4C61F3087B000693E42 /* Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8C4C51F3087B000693E42 /* Dictionary.swift */; };
 		ADF8C4C81F33297B00693E42 /* UserLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8C4C71F33297B00693E42 /* UserLoginController.swift */; };
 		ADF8C4CA1F3329C500693E42 /* UserRegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADF8C4C91F3329C500693E42 /* UserRegisterController.swift */; };
@@ -36,6 +41,7 @@
 /* Begin PBXFileReference section */
 		2049916D2A999FD5AE18D7DA /* Pods_fasha_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fasha_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C84EB41222DBC525F968347 /* Pods_fasha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fasha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD304EF21F39A89D00C1B638 /* ServiceLocatorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocatorImpl.swift; sourceTree = "<group>"; };
 		AD99DB301F2B325A008F5AE8 /* fasha-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fasha-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD99DB351F2B325A008F5AE8 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartController.swift; path = ../../StartController.swift; sourceTree = "<group>"; };
 		AD99DB381F2B325A008F5AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -47,8 +53,12 @@
 		AD99DB681F2CF212008F5AE8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD99DB691F2CF212008F5AE8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD99DB791F3048D9008F5AE8 /* ApiClientBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClientBase.swift; sourceTree = "<group>"; };
+		ADA12BA51F475BF8005D8E1B /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		ADBE38861F377524002B2B5E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		ADDAE2641F37913B0076E530 /* LoginState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		ADDAE2671F382BD70076E530 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		ADDAE2691F3869990076E530 /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
+		ADDAE26C1F386AC50076E530 /* UserRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		ADF8C4C51F3087B000693E42 /* Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary.swift; sourceTree = "<group>"; };
 		ADF8C4C71F33297B00693E42 /* UserLoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginController.swift; sourceTree = "<group>"; };
 		ADF8C4C91F3329C500693E42 /* UserRegisterController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegisterController.swift; sourceTree = "<group>"; };
@@ -82,6 +92,14 @@
 				2049916D2A999FD5AE18D7DA /* Pods_fasha_iOSTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD304EEF1F39A7E300C1B638 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AD304EF21F39A89D00C1B638 /* ServiceLocatorImpl.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		AD99DB271F2B325A008F5AE8 = {
@@ -130,6 +148,7 @@
 		AD99DB531F2B90FD008F5AE8 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				ADDAE26B1F386AAE0076E530 /* Repository */,
 				AD99DB761F3048B0008F5AE8 /* Services */,
 				AD99DB5B1F2B9B26008F5AE8 /* Model */,
 				ADBE38861F377524002B2B5E /* User.swift */,
@@ -140,6 +159,7 @@
 		AD99DB551F2B965E008F5AE8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				ADDAE2661F382BD70076E530 /* Services */,
 				ADDAE2631F37913B0076E530 /* TransitionState */,
 				ADF8C4C31F30879600693E42 /* Utils */,
 			);
@@ -199,6 +219,7 @@
 		AD99DB6D1F2F8EC0008F5AE8 /* Infrastructures */ = {
 			isa = PBXGroup;
 			children = (
+				AD304EEF1F39A7E300C1B638 /* Service */,
 				AD99DB771F3048D9008F5AE8 /* Repository */,
 			);
 			path = Infrastructures;
@@ -232,6 +253,7 @@
 		AD99DB771F3048D9008F5AE8 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				ADDAE2691F3869990076E530 /* UserRepositoryImpl.swift */,
 				AD99DB781F3048D9008F5AE8 /* ApiClient */,
 			);
 			path = Repository;
@@ -251,6 +273,23 @@
 				ADDAE2641F37913B0076E530 /* LoginState.swift */,
 			);
 			path = TransitionState;
+			sourceTree = "<group>";
+		};
+		ADDAE2661F382BD70076E530 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				ADA12BA51F475BF8005D8E1B /* ServiceLocator.swift */,
+				ADDAE2671F382BD70076E530 /* UserService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		ADDAE26B1F386AAE0076E530 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ADDAE26C1F386AC50076E530 /* UserRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		ADF8C4C31F30879600693E42 /* Utils */ = {
@@ -435,12 +474,17 @@
 			files = (
 				AD99DB6A1F2CF212008F5AE8 /* AppDelegate.swift in Sources */,
 				ADDAE2651F37913B0076E530 /* LoginState.swift in Sources */,
+				ADDAE26D1F386AC50076E530 /* UserRepository.swift in Sources */,
+				ADDAE26A1F3869990076E530 /* UserRepositoryImpl.swift in Sources */,
 				ADF8C4C81F33297B00693E42 /* UserLoginController.swift in Sources */,
+				ADA12BA61F475BF8005D8E1B /* ServiceLocator.swift in Sources */,
 				ADF8C4C61F3087B000693E42 /* Dictionary.swift in Sources */,
 				AD99DB631F2BA82D008F5AE8 /* UserEntity.swift in Sources */,
 				AD99DB7A1F3048D9008F5AE8 /* ApiClientBase.swift in Sources */,
+				ADDAE2681F382BD70076E530 /* UserService.swift in Sources */,
 				ADBE38871F377524002B2B5E /* User.swift in Sources */,
 				ADF8C4CA1F3329C500693E42 /* UserRegisterController.swift in Sources */,
+				AD304EF31F39A89D00C1B638 /* ServiceLocatorImpl.swift in Sources */,
 				AD99DB361F2B325A008F5AE8 /* StartController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
