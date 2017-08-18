@@ -19,25 +19,14 @@ public class ServiceLocatorImpl: ServiceLocator {
     fileprivate init() {
     }
     
-    /**
-     追加する
-     
-     - parameter recipe: 登録対象のオブジェクト
-     */
     public func add<T>(_ recipe: @escaping () -> T) {
         let key = typeName(T.self)
         container[key] = recipe
     }
     
-    /**
-     オブジェクトを取得する
-     
-     - returns:オブジェクト
-     */
     public func lookup<T>() -> T {
         let key = typeName(T.self)
         guard let result = container[key] else {
-            // 何故かこうしないと取得できない場合がある
             let result = container.filter { tempKey, _ in
                 tempKey == key
                 }.first?.value
@@ -47,7 +36,6 @@ public class ServiceLocatorImpl: ServiceLocator {
     }
     
     fileprivate func typeName<T>(_ some: T.Type) -> String {
-        // 命名規約で動作
         return "\(some)".replacingOccurrences(of: "Impl", with: "")
     }
 }
