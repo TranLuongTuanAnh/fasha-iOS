@@ -11,6 +11,7 @@ import Bond
 import ReactiveKit
 
 enum LoginStateType {
+    case none
     case loading
     case success
     case failure
@@ -18,5 +19,5 @@ enum LoginStateType {
 
 class LoginState {
     static let shareInstance = LoginState()
-    var transitionState = Observable<LoginStateType>(.success)
+    var transitionState = Observable<LoginStateType>(.none)
 }

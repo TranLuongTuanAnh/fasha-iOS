@@ -16,6 +16,7 @@ class UserService:NSObject {
             let domain = UserDomainFactory.domain
             return (domain?.userRepository.login(email: email, password: password))!
          }.then {  obj -> () in
+            LoginState.shareInstance.transitionState.next(.success)
             debugPrint(obj as AnyObject)
         }
     }

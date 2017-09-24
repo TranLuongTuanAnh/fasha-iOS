@@ -10,6 +10,7 @@ target 'fasha-iOS' do
   pod 'ReactiveKit', '3.3.1'
   pod 'Diff',  '0.5.0'
   pod 'PromiseKit', '~> 4.0'
+  pod 'Unbox'
 
 #  # Pods for fasha-iOS
 #

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04A019981328EA701F728DBB /* Pods_fasha_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C84EB41222DBC525F968347 /* Pods_fasha_iOS.framework */; };
 		AD304EF31F39A89D00C1B638 /* ServiceLocatorImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD304EF21F39A89D00C1B638 /* ServiceLocatorImpl.swift */; };
+		AD57DBFE1F49DFC500879F8D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD57DBFD1F49DFC500879F8D /* Home.storyboard */; };
 		AD99DB361F2B325A008F5AE8 /* StartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD99DB351F2B325A008F5AE8 /* StartController.swift */; };
 		AD99DB391F2B325A008F5AE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB371F2B325A008F5AE8 /* Main.storyboard */; };
 		AD99DB3B1F2B325A008F5AE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD99DB3A1F2B325A008F5AE8 /* Assets.xcassets */; };
@@ -42,6 +43,7 @@
 		2049916D2A999FD5AE18D7DA /* Pods_fasha_iOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fasha_iOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C84EB41222DBC525F968347 /* Pods_fasha_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fasha_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD304EF21F39A89D00C1B638 /* ServiceLocatorImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocatorImpl.swift; sourceTree = "<group>"; };
+		AD57DBFD1F49DFC500879F8D /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Controllers/Home.storyboard; sourceTree = "<group>"; };
 		AD99DB301F2B325A008F5AE8 /* fasha-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fasha-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD99DB351F2B325A008F5AE8 /* StartController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = StartController.swift; path = ../../StartController.swift; sourceTree = "<group>"; };
 		AD99DB381F2B325A008F5AE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -210,6 +212,7 @@
 		AD99DB6C1F2F89C6008F5AE8 /* Fasha */ = {
 			isa = PBXGroup;
 			children = (
+				AD57DBFD1F49DFC500879F8D /* Home.storyboard */,
 				AD99DB731F304009008F5AE8 /* Controllers */,
 				AD99DB741F304009008F5AE8 /* Views */,
 			);
@@ -406,6 +409,7 @@
 			files = (
 				AD99DB3B1F2B325A008F5AE8 /* Assets.xcassets in Resources */,
 				AD99DB391F2B325A008F5AE8 /* Main.storyboard in Resources */,
+				AD57DBFE1F49DFC500879F8D /* Home.storyboard in Resources */,
 				AD99DB6B1F2CF212008F5AE8 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,9 +430,26 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fasha-iOS/Pods-fasha-iOS-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Bond/Bond.framework",
+				"${BUILT_PRODUCTS_DIR}/Diff/Diff.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveKit/ReactiveKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Unbox/Unbox.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bond.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Diff.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Unbox.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -456,13 +477,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fasha-iOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
