@@ -11,8 +11,6 @@ import PromiseKit
 class UserRepositoryImlp: UserRepository {
     func login(email: String, password: String) -> Promise<Any?> {
         let apiClientBase = ApiClientBase()
-        return apiClientBase.post(path: "FashaApi/login/", parameters: ["email":email as AnyObject,"password":password as AnyObject], headers: nil).then{ data in
-            debugPrint(data as AnyObject)
-        }
+        return apiClientBase.post(path: "FashaApi/login/", parameters: ["email":email as AnyObject,"password":password as AnyObject], headers: nil)
     }
 }
