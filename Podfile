@@ -6,8 +6,8 @@ target 'fasha-iOS' do
   use_frameworks!
   pod 'RealmSwift'
   pod 'Alamofire'
-  pod 'Bond', '6.0.1'
-  pod 'ReactiveKit', '3.3.1'
+  pod 'Bond'
+  pod 'ReactiveKit'
   pod 'Diff',  '0.5.0'
   pod 'PromiseKit', '~> 4.0'
   pod 'Unbox'
